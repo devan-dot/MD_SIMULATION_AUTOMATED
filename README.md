@@ -23,7 +23,7 @@ Step 1 → FC_BB 400 | FC_SC 40
 Step 2 → FC_BB 300 | FC_SC 30
 Step 3 → FC_BB 200 | FC_SC 20
 Step 4 → FC_BB 100 | FC_SC 10
-Step 5 → FC_BB 50 | FC_SC 5
+Step 5 → FC_BB 50  | FC_SC 5
 
 Final out:
 > production.tpr
