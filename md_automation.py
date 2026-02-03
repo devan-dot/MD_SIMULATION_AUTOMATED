@@ -8,6 +8,16 @@ MAX_EQ_STEPS = 5
 POSRES_SCHEDULE = [(400, 40), (300, 30), (200, 20), (100, 10), (50, 5)]
 
 
+BANNER = r"""
+  ____                                      ____                
+ / ___|_ __ ___  _ __ ___   __ _           |  _ \ _   _ _ __  
+| |  _| '__/ _ \| '_ ` _ \ / _` |  _____   | |_) | | | | '_ \ 
+| |_| | | | (_) | | | | | | (_| | |_____|  |  _ <| |_| | | | |
+ \____|_|  \___/|_| |_| |_|\__,_|          |_| \_\\__,_|_| |_|
+                                                         
+          >> Automated GROMACS CHARMM-GUI Pipeline <<
+"""
+
 # ---------------- MDP PARSER ---------------- #
 
 def read_mdp(filepath):
@@ -167,7 +177,8 @@ def run_production(mdp, input_gro):
 # ---------------- MAIN WORKFLOW ---------------- #
 
 def main():
-    print("=== GROMACS CHARMM-GUI AUTOMATION ===")
+    # Print the ASCII banner
+    print(BANNER)
 
     min_mdp = input("Minimization MDP filename: ").strip()
     eq_mdp = input("Equilibration MDP filename: ").strip()
@@ -271,4 +282,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
