@@ -278,6 +278,7 @@ def main():
     run_production(prod_mdp, final_gro)
 
     print("\nALL SIMULATIONS COMPLETED SUCCESSFULLY.")
+    print(" For more information, visit https://github.com/devan-dot")
 
 
 if __name__ == "__main__":
